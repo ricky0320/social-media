@@ -6,7 +6,7 @@ const thoughtSchema = new Schema(
   {
     thoughtText: {
       type: String,
-      required: 'Please leave a thought!',
+      required: 'You need to leave a thought!',
       minlength: 1,
       maxlength: 280
     },
@@ -35,3 +35,4 @@ thoughtSchema.virtual('reactionCount').get(function() {
 
 const Thought = model('Thought', thoughtSchema);
 module.exports = Thought;
+

@@ -8,3 +8,4 @@ router.use("/users", userRoutes);
 router.use("/thoughts", thougthsRoutes);
 
 module.exports = router;
+
